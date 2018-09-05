@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Twisted Tales Films</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/png" href="Images/favicon.ico">
+        <script>
+
+
+            
+            
+            function myFunction(e) {
+                var target = e.target.id;
+                // Get the modal
+                var modal = document.getElementById('myModal');
+            
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = document.getElementById(target);
+                var modalImg = document.getElementById("img01");
+                var captionText = document.getElementById("caption");
+            
+                modal.style.display = "block";
+                modalImg.src = e.target.src;
+            
+            
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+            }
+            // When the user clicks on <span> (x), close the modal
+            function goodbye() {
+                var modal = document.getElementById('myModal');
+                modal.style.display = "none";
+            }
+            
+            function fill(e) {
+            
+            }
+            
+            
+            
+        </script>
+        <style>
+                                #inner {
+                          position: absolute;
+                          top: 50%;
+                          left: 50%;
+                          transform: translateX(-50%) translateY(-50%);
+                          color: hsl(121, 100%, 100%);
+                          font-size: 1000%;
+            
+            
+                      }
+                       #inner:hover {
+                          position: absolute;
+                          top: 50%;
+                          left: 50%;
+                          transform: translateX(-50%) translateY(-50%);
+                          color: hsl(120, 92%, 36%);
+                          font-size: 1000%;
+            
+            
+                      }
+                       footer {
+                          background-color: #161616;
+                          color: #f5f5f5;
+                          padding: 32px;
+                      }
+            
+                      footer a {
+                          color: #f5f5f5;
+                      }
+            
+                      footer a:hover {
+                          color: #777;
+                          text-decoration: none;
+                      }
+            
+                                   #more{        
+                            width : 100%;
+                          height: 300px;
+                          overflow: hidden;
+                      }
+            
+            
+                                  .thumbnail{        
+            
+            
+                           width : 100%;
+                          height: 300px;
+                          overflow: hidden;
+                      }
+            
+                      .thumbnail img{
+                          width: 100%;
+                          height: 100%;
+                          display: block;
+                      }
+            
+                                              #myImg {
+                                                  border-radius: 5px;
+                                                  cursor: pointer;
+                                                  transition: 0.3s;
+                                                  filter: grayscale(100%);
+                                              }
+            
+                                              #myImg:hover {opacity: 0.7;
+                                                            filter: grayscale(0%);
+                                  }
+            
+                                              /* The Modal (background) */
+                                              .modal {
+                                                  display: none; /* Hidden by default */
+                                                  position: fixed; /* Stay in place */
+                                                  z-index: 1; /* Sit on top */
+                                                  padding-top: 100px; /* Location of the box */
+                                                  left: 0;
+                                                  top: 0;
+                                                  width: 100%; /* Full width */
+                                                  height: 100%; /* Full height */
+                                                  overflow: auto; /* Enable scroll if needed */
+                                                  background-color: rgb(0,0,0); /* Fallback color */
+                                                  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+                                              }
+            
+                                              /* Modal Content (image) */
+                                              .modal-content {
+                                                  margin: auto;
+                                                  display: block;
+                                                  width: 80%;
+                                                  max-width: 700px;
+                                              }
+            
+                                              /* Caption of Modal Image */
+                                              #caption {
+                                                  margin: auto;
+                                                  display: block;
+                                                  width: 80%;
+                                                  max-width: 700px;
+                                                  text-align: center;
+                                                  color: #ccc;
+                                                  padding: 10px 0;
+                                                  height: 150px;
+                                              }
+            
+                                              /* Add Animation */
+                                              .modal-content, #caption {    
+                                                  -webkit-animation-name: zoom;
+                                                  -webkit-animation-duration: 0.6s;
+                                                  animation-name: zoom;
+                                                  animation-duration: 0.6s;
+                                              }
+            
+                                              @-webkit-keyframes zoom {
+                                                  from {-webkit-transform:scale(0)} 
+                                                  to {-webkit-transform:scale(1)}
+                                              }
+            
+                                              @keyframes zoom {
+                                                  from {transform:scale(0)} 
+                                                  to {transform:scale(1)}
+                                              }
+            
+                                              /* The Close Button */
+                                              .close {
+                                                  position: absolute;
+                                                  top: 15px;
+                                                  right: 35px;
+                                                  color: #f1f1f1;
+                                                  font-size: 40px;
+                                                  font-weight: bold;
+                                                  transition: 0.3s;
+                                              }
+            
+                                              .close:hover,
+                                              .close:focus {
+                                                  color: #bbb;
+                                                  text-decoration: none;
+                                                  cursor: pointer;
+                                              }
+            
+                                              /* 100% Image Width on Smaller Screens */
+                                              @media only screen and (max-width: 700px){
+                                                  .modal-content {
+                                                      width: 100%;
+                                                  }
+                                              }
+                                                              .nav-tabs > li, .nav-pills > li {
+                                                              float:none;
+                                                              display:inline-block;
+                                                          }
+            
+                                                          .nav-tabs {
+                                                              text-align:center;
+                                                          }
+            
+                                                          .top-buffer { margin-top:200000px; }
+                    .navbar {
+            
+            
+                border-bottom-color: #999999;
+                border-bottom-width: 2px;
+                margin-bottom: 2px;
+                font-size: 18px;
+                letter-spacing: 5px;
+                font-family: 'Kaushan Script;';
+                border-style: solid;
+            }
+            
+                                              .fa {
+                                                padding: 20px;
+                                                font-size: 30px;
+                                                width: 90px;
+                                                text-align: center;
+                                                text-decoration: none;
+                                                margin: 5px 2px;
+                                                border-radius: 50%;
+                                              }
+            
+                                              .fa:hover {
+                                                  opacity: 0.7;
+                                              }
+                        .fa {
+                                                padding: 20px;
+                                                font-size: 30px;
+                                                width: 50px;
+                                                text-align: center;
+                                                text-decoration: none;
+                                                margin: 5px 2px;
+                                              }
+                       #tabs{
+            
+                background-color: #161616;
+                border-bottom-color: #999999;
+                border-bottom-width: 2px;
+                margin-bottom: 2px;
+                font-size: 18px;
+                letter-spacing: 5px;
+                font-family: 'Kaushan Script;';
+                border-style: solid;
+                color: #999999; 
+            
+            }
+        </style>
+    </head>
+    <body style="background-color: #242424; color: #999999;">
+
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" role="navigation" style="background-color: #161616; font-family: 'Kaushan Script;'">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">Twisted Tales Films</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">Home</a></li>
+                        <li class="active"><a href="#">Media</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#contact"><span class="glyphicon glyphicon-log-in"></span> Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="col-xs-12" style="height:50px;"></div>
+        <div class="col-xs-12" style="height:50px;"></div>
+
+
+
+        <div class="container">
+            <ul class="nav nav-tabs nav-justified">
+                <li class="active"><a id="tabs" data-toggle="tab" href="#Videos" style="color: #999999;  font-family: 'Kaushan Script;'">Videos</a></li>
+                <li><a id="tabs" data-toggle="tab" href="#Photos" style="color: #999999; font-family: 'Kaushan Script;'">Photos</a></li>
+            </ul>
+            <div class="col-xs-12" style="height:50px;"></div>
+            <div class="col-xs-12" style="height:50px;"></div>
+        </div>
+
+        <div class="tab-content">
+            <div id="Videos" class="tab-pane fade in active">
+                <div class="container">
+                    <section class="block">
+                        <div id="myCarousel" class="carousel slide" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="active item">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/3VcqU8AvIyo?controls=0;rel=0;autoplay=0;showinfo=0;"></iframe>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/LS--lJCSkqQ?controls=0;rel=0;autoplay=0;showinfo=0;"></iframe>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/MSnyBXFR0bU?controls=0;rel=0;autoplay=;showinfo=0;"></iframe>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div id="Photos" class="tab-pane fade">
+
+
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-sm-4" style="padding: 0cm;">
+                            <div class="thumbnail" onclick="myFunction(event)" style="background-color: black;border-color:#808080;margin: 0;">
+                                <img id="myImg" src="Images/Test.jpg" alt="Trolltunga, Norway" style="width:100%">
+
+                            </div>
+                        </div>
+                        <div class="col-sm-4" style="padding: 0cm;">
+                            <div class="thumbnail" onclick="myFunction(event)" style="background-color: black;border-color:#808080;margin: 0;">
+                                <img id="myImg" src="Images/Test1.jpg" alt="Trolltunga, Norway" style="width:100%">
+
+                            </div>
+                        </div>
+                        <div class="col-sm-4" style="padding: 0cm;">
+                            <div class="thumbnail" onclick="myFunction(event)" style="background-color: black;border-color:#808080;margin: 0;">
+                                <img id="myImg" src="Images/five.jpg" alt="Trolltunga, Norway" style="width:100%">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4" style="padding: 0cm;">
+                            <div class="thumbnail" onclick="myFunction(event)" style="background-color: black;border-color:#808080;margin: 0;">
+                                <img id="myImg" src="Images/three.jpg" alt="Trolltunga, Norway" style="width:100%">
+
+                            </div>
+                        </div>
+                        <div class="col-sm-4" style="padding: 0cm;">
+                            <div class="thumbnail" onclick="myFunction(event)" style="background-color: black;border-color:#808080;margin: 0;">
+                                <img id="myImg" src="Images/four.jpg" alt="Trolltunga, Norway" style="width:100%">
+
+                            </div>
+                        </div>
+                        <div class="col-sm-4" style="padding: 0cm;">
+                            <div id="more" style="background-color: black;border-color:#808080;margin: 0;" onclick="fill(event)">
+                                <div id="inner">More
+                                    <div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12" style="height:50px; background-color: #242424;"></div>
+        <div class="col-xs-12" style="height:50px; background-color: #242424;"></div>
+        <div class="col-xs-12" style="height:50px; background-color: #242424;"></div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close" onclick="goodbye()">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+
+        </div>
+
+        <footer id="contact" class="text-center" style="font-family: 'Kaushan Script;'">
+            <a class="up-arrow" href="#" title="TO TOP">
+                <span class="glyphicon glyphicon-chevron-up"></span>
+            </a><br><br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+
+                        <p>Contact us and we'll get back to you soon.</p>
+                        <p><span class="glyphicon glyphicon-map-marker"></span> Derby, Uk</p>
+                        <p><span class="glyphicon glyphicon-phone"></span> +44 07917770752</p>
+                        <p><span class="glyphicon glyphicon-envelope"></span> twistedtalesfilms@gmail.com </p>
+                        <a href="https://www.facebook.com/TwistedTalesFilms/" class="fa fa-facebook"></a>
+                        <a href="https://twitter.com/TwistedTaleFilm" class="fa fa-twitter"></a>
+                        <a href="https://www.youtube.com/channel/UCaeghc7Hb041bWz5voqk50Q" class="fa fa-youtube"></a>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </footer>
+
+        <script>
+            $(document).ready(function(){
+                // Initialize Tooltip
+                $('[data-toggle="tooltip"]').tooltip(); 
+            })
+        </script>
+
+
+    </body>
+</html>

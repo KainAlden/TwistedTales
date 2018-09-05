@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Twisted Tales Films</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Diplomata+SC" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Diplomata+SC|Kaushan+Script" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Iceland" rel="stylesheet">
+        <link rel="icon" type="image/png" href="Images/favicon.ico">
+        <script src="Script.js"></script>
+        <style>
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            
+                        .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                max-width: 250px;
+                min-width: 250px;
+            
+                margin: auto;
+                text-align: center;
+            }
+                        .card-img-top {
+                width: 100%;
+            }
+            
+            .title {
+                color: grey;
+                font-size: 18px;
+            }
+            
+            
+            
+            a {
+                text-decoration: none;
+                font-size: 22px;
+                color:#f5f5f5;
+            }
+                                    .thumbnail{        
+            
+            
+                             width : 100%;
+                            height: 100%;
+                            overflow: hidden;
+                        }
+            
+                        .thumbnail img{
+                            width: 100%;
+                            height: 100%;
+                            display: block;
+                        }
+            
+                                    /* Add a dark background color to the footer */
+                        footer {
+                            background-color: #161616;
+                            color: #f5f5f5;
+                            padding: 32px;
+                        }
+            
+                        footer a {
+                            color: #f5f5f5;
+                        }
+            
+                         a:hover {
+                            color: #777;
+                            text-decoration: none;
+                        }
+                        footer a:hover {
+                            color: #777;
+                            text-decoration: none;
+                        }
+                                                #rcorners1 {
+                                     border-radius: 5px;
+                                        background:#161616;
+                                        padding: 20px;    
+                                        text-align: center;
+                                        border-bottom-color: #999999;
+                                          border-width: 1px;
+                                           border-style: ridge;
+            
+                                    }
+                          #rcorners2 {
+                                     border-radius: 5px;
+                                        background:#161616;
+                                        padding: 20px;    
+                                        text-align: center;
+                                        border-bottom-color: #999999;
+                                          border-width: 1px;
+                                           border-style: ridge;
+                                            height: 320px;
+                            overflow: hidden;
+                                    }
+            
+            
+                                                .fa {
+                                                  padding: 20px;
+                                                  font-size: 30px;
+                                                  width: 90px;
+                                                  text-align: center;
+                                                  text-decoration: none;
+                                                  margin: 5px 2px;
+                                                  border-radius: 50%;
+                                                }
+            
+                                                .fa:hover {
+                                                    opacity: 0.7;
+                                                }
+            
+            
+                                                    .nav-tabs > li, .nav-pills > li {
+                                                    float:none;
+                                                    display:inline-block;
+                                                }
+            
+                                                .nav-tabs {
+                                                    text-align:center;
+                                                }
+                                                        .top-buffer { margin-top:20000px; }
+                                                       .carousel .item {
+                                                    width: 100%; /*slider width*/
+                                                }
+            
+                                                        .fa {
+                                                  padding: 20px;
+                                                  font-size: 30px;
+                                                  width: 50px;
+                                                  text-align: center;
+                                                  text-decoration: none;
+                                                  margin: 5px 2px;
+                                                }
+                                                .navbar {
+            
+            
+                                          border-bottom-color: #999999;
+                                          border-bottom-width: 2px;
+                                          margin-bottom: 2px;
+                                          font-size: 18px;
+                                          letter-spacing: 5px;
+                                          font-family: 'Kaushan Script;';
+                                          border-style: solid;
+                                      }
+        </style>
+    </head>
+    <body style="background-color: #242424; color: #999999;">
+
+        <nav class="navbar navbar-default navbar-fixed-top " role="navigation" style="background-color: #161616; font-family: 'Kaushan Script;'">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="mailto:kain.alden@gmail.com">Twisted Tales Films</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="Media.html">Media</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#contact"><span class="glyphicon glyphicon-log-in"></span> Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="block">
+            <div id="myCarousel" class="carousel slide" data-interval="false">
+                <div class="carousel-inner">
+                    <div class="active item">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/3VcqU8AvIyo?controls=0;rel=0;autoplay=1;showinfo=0;"></iframe>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="Images/Test.jpg" alt="Slide1" />
+                    </div>
+                    <div class="item">
+                        <img src="Images/Test1.jpg" alt="Slide2" />
+                    </div>
+
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+        </section>
+
+
+
+       <div class="col-xs-12" style="height:30px;"></div>
+               
+        <div class="container">
+
+
+            <div class="row" style="text-align: center;">
+                <div id="rcorners2" class="col-sm-5" style="background-color: #161616;padding: 0px;">
+                    <div class="thumbnail" onclick="myFunction(event)" style="background-color: black;border-color:#808080;margin: 0;">
+                        <img id="myImg" src="Images/CursedLogo.jpg" alt="Trolltunga, Norway" style="width:100%">
+
+                    </div>
+                </div>
+                <div id="rcorners2" class="col-sm-7" style="background-color: #161616;">
+                    <h2 style="text-align:center; font-size: 27px; font-family: 'Kaushan Script;'">Cursed is a dark supernatural thriller examining two young witches; Lucinda and Skye and one young lycanthrope; Logan. When Skye attempts to aid her friends in a forbidden romance, she releases an ancient evil upon both kind. Will Logan be able to save the love of his life? Will Lucinda be able to fight her internal darkness and will Skye be able to redeem herself and put an end to the curse which damns witches and werewolves alike to a never ending war.</h2>
+                </div>
+
+            </div>
+
+            <div class="col-xs-12" style="height:25px;"></div>
+
+            <div class="row" style="text-align: center;">
+                <div id="rcorners2" class="col-sm-4" style="background-color: #161616;font-family: 'Kaushan Script;'"></div>
+                <div id="rcorners2" class="col-sm-4" style="background-color: #161616;font-family: 'Kaushan Script;'"></div>
+                <div id="rcorners2" class="col-sm-4" style="background-color: #161616;font-family: 'Kaushan Script;'"></div>
+
+            </div>
+            <div class="col-xs-12" style="height:50px;"></div>
+            <div class="col-xs-12" style="height:50px;"></div>
+        </div>
+        
+
+        <section class="block">
+            <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel2" data-slide-to="1"></li>
+      <li data-target="#myCarousel2" data-slide-to="2"></li>
+      <li data-target="#myCarousel2" data-slide-to="3"></li>
+      <li data-target="#myCarousel2" data-slide-to="4"></li>
+      <li data-target="#myCarousel2" data-slide-to="5"></li>
+    </ol>
+                <div class="carousel-inner">
+                    <div class="active item">
+                        <div class="container">
+                            <div class="row" style="text-align: center;">
+                                <div class="col-sm-4" style="font-size: 18px; font-family: 'Kaushan Script;'">
+                                    <div class="card" style="background-color: #161616;">
+
+                                        <img class="img-responsive" src="Images/face.jpg" alt="John" width="304" height="236"style=" filter: grayscale(80%);">
+                                       
+                                        <h1>Micheal <br />Keeling</h1>
+                                        <p class="title">Director, Producer and Writer</p>
+                                        <a href="https://www.facebook.com/Brutelmagic.keeling"><i class="fa fa-facebook"></i></a>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4" style="font-size: 18px; font-family: 'Kaushan Script;'">
+                                    <div class="card" style="background-color: #161616;">
+                                        <img class="img-responsive" src="Images/elliot.jpg" alt="John" width="304" height="236"style=" filter: grayscale(80%);">
+
+                                        <h1>Elliot <br />Sutton</h1>
+                                        <p class="title">Co writer and Writing Assistant</p>
+                                        
+
+                                        <a href="https://www.facebook.com/elliott.s.sutton"><i class="fa fa-facebook"></i></a>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4" style="font-size: 18px; font-family: 'Kaushan Script;'"style=" filter: grayscale(80%);">
+                                    <div class="card" style="background-color: #161616;">
+                                        <img class="img-responsive" src="Images/Rafe-dird.jpg" alt="John" width="304" height="236">
+
+                                        <h1>Rafe<br /> Bird</h1>
+                                        <p class="title">Production Assistant</p>
+                                        
+
+                                        <a href="https://www.facebook.com/RafeRaffBird"><i class="fa fa-facebook"></i></a>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <div class="container">
+                            <div class="row" style="text-align: center;">
+                                <div class="col-sm-4" style="font-size: 18px; font-family: 'Kaushan Script;'">
+                                    <div class="card" style="background-color: #161616;">
+                                        <img class="img-responsive" src="Images/Markfowler.jpg" alt="John" width="304" height="236"style=" filter: grayscale(80%);">
+
+                                        <h1>Mark <br />Fowler</h1>
+                                        <p class="title">Assistant Director</p>
+                                        
+
+                                        <a href="https://www.facebook.com/mark.fowler.14203"><i class="fa fa-facebook"></i></a>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4" style="font-size: 18px; font-family: 'Kaushan Script;'">
+                                    <div class="card" style="background-color: #161616;">
+                                        <img class="img-responsive" src="Images/tom chapman.jpg" alt="John" width="304" height="236"style=" filter: grayscale(80%);">
+
+                                        <h1>Thomas <br />Chapman</h1>
+                                        <p class="title">Camera Operator</p>
+                                       
+
+                                        <a href="https://www.facebook.com/thomas.chapman.31586"><i class="fa fa-facebook"></i></a>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4" style="font-size: 18px; font-family: 'Kaushan Script;'">
+                                    <div class="card" style="background-color: #161616;">
+                                        <img class="img-responsive" src="Images/natash mann-harwood.jpg" alt="John" width="304" height="236"style=" filter: grayscale(80%);">
+
+                                        <h1>Natasha Mann<br /> Harwood</h1>
+                                        <p class="title">Special Fx</p>
+                                        
+
+                                        <a href="https://www.facebook.com/misstash007"><i class="fa fa-facebook"></i></a>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="container">
+                            <div class="row" style="text-align: center;">
+                                <div class="col-sm-4" style="font-size: 18px; font-family: 'Kaushan Script;'">
+                                    <div class="card" style="background-color: #161616;">
+                                        <img class="img-responsive" src="Images/jenny gilbert.jpg" alt="John" width="304" height="236"style=" filter: grayscale(80%);">
+
+                                        <h1>Jenny <br />Gilbert</h1>
+                                        <p class="title">Special Fx</p>
+                                        
+
+                                        <a href="https://www.facebook.com/jenny.gilbert.165"><i class="fa fa-facebook"></i></a>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4" style="font-size: 18px; font-family: 'Kaushan Script;'">
+                                    <div class="card" style="background-color: #161616;">
+                                        <img class="img-responsive" src="Images/Heather aspinall.jpg" alt="John" width="304" height="236"style=" filter: grayscale(80%);">
+
+                                        <h1>Heather <br />Aspinall</h1>
+                                        <p class="title">Editor</p>
+                                        
+
+                                        <a href="https://www.facebook.com/heather.aspinall.9"><i class="fa fa-facebook"></i></a>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4" style="font-size: 18px; font-family: 'Kaushan Script;'">
+                                    <div class="card" style="background-color: #161616;">
+                                        <img class="img-responsive" src="Images/dAVID bEARD.jpg" alt="John" width="304" height="236"style=" filter: grayscale(80%);">
+
+                                        <h1>David <br />Beard</h1>
+                                        <p class="title">Sound Designer</p>
+                                       
+
+                                        <a href="https://www.facebook.com/david.beard.501598?pnref=friends.search"><i class="fa fa-facebook"></i></a>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <div class="container">
+                            <div class="row" style="text-align: center;">
+                                <div class="col-sm-4" style="font-size: 18px; font-family: 'Kaushan Script;'">
+                                    <div class="card" style="background-color: #161616;">
+                                        <img class="img-responsive" src="Images/Charlie Reynolds.jpg" alt="John" width="304" height="236"style=" filter: grayscale(80%);">
+
+                                        <h1>Charlie <br />Reynolds</h1>
+                                        <p class="title">Sound Operator</p>
+                                        
+
+                                        <a href="https://www.facebook.com/charlieReynolds1284"><i class="fa fa-facebook"></i></a>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4" style="font-size: 18px; font-family: 'Kaushan Script;'">
+                                    <div class="card" style="background-color: #161616;">
+                                        <img class="img-responsive" src="Images/Amon Kivineva.jpg" alt="John" width="304" height="236"style=" filter: grayscale(80%);">
+
+                                        <h1>Amon K<br />ivineva</h1>
+                                        <p class="title">Graphics Designer</p>
+                                        
+
+                                        <a href="https://www.facebook.com/amon.kivineva"><i class="fa fa-facebook"></i></a>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4" style="font-size: 18px; font-family: 'Kaushan Script;'">
+                                    <div class="card" style="background-color: #161616;">
+                                        <img class="img-responsive" src="Images/Callum.jpg" alt="John" width="304" height="236"style=" filter: grayscale(80%);">
+
+                                        <h1>Callum <br />Dawson</h1>
+                                        <p class="title">Runner</p>
+                                      
+
+                                        <a href="https://www.facebook.com/callum.dawson.71404"><i class="fa fa-facebook"></i></a>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <div class="container">
+                            <div class="row" style="text-align: center;">
+                                <div class="col-sm-4" style="font-size: 18px; font-family: 'Kaushan Script;'">
+                                    <div class="card" style="background-color: #161616;">
+                                        <img class="img-responsive" src="Images/Umar Saeed.jpg" alt="John" width="304" height="236"style=" filter: grayscale(80%);">
+
+                                        <h1>Umar <br />Saeed</h1>
+                                        <p class="title">VFX Artist</p>
+                                        
+
+                                        <a href="https://www.facebook.com/profile.php?id=100012005441097"><i class="fa fa-facebook"></i></a>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4" style="font-size: 18px; font-family: 'Kaushan Script;'">
+                                    <div class="card" style="background-color: #161616;">
+                                        <img class="img-responsive" src="Images/Pagan.jpg" alt="John" width="304" height="236"style=" filter: grayscale(80%);">
+
+                                        <h1>Pagan<br /> Hollis</h1>
+                                        <p class="title">Continuity Supervisor</p>
+                                        
+
+                                        <a href="https://www.facebook.com/pijjin"><i class="fa fa-facebook"></i></a>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4" style="font-size: 18px; font-family: 'Kaushan Script;'">
+                                    <div class="card" style="background-color: #161616;">
+                                        <img class="img-responsive" src="Images/Amber.jpg" alt="John" width="304" height="236"style=" filter: grayscale(80%);">
+
+                                        <h1>Amber <br />Louise</h1>
+                                        <p class="title">Skye</p>
+                                        
+
+                                        <a href="https://www.facebook.com/AmberLouise95"><i class="fa fa-facebook"></i></a>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <div class="container">
+                            <div class="row" style="text-align: center;">
+                                <div class="col-sm-4" style="font-size: 18px; font-family: 'Kaushan Script;'">
+                                    <div class="card" style="background-color: #161616;">
+                                        <img class="img-responsive" src="Images/Anita.jpg" alt="John" width="304" height="236"style=" filter: grayscale(80%);">
+
+                                        <h1>Anita <br />Dashwood</h1>
+                                        <p class="title">Aunt Eva</p>
+                                        
+
+                                        <a href="https://www.facebook.com/AnitaDashingwood"><i class="fa fa-facebook"></i></a>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4" style="font-size: 18px; font-family: 'Kaushan Script;'">
+                                    <div class="card" style="background-color: #161616;">
+                                        <img class="img-responsive" src="Images/Dean.jpg" alt="John" width="304" height="236">
+
+                                        <h1>Dean <br />Morris</h1>
+                                        <p class="title">Logan</p>
+                                       
+
+                                        <a href="https://www.facebook.com/dean.morris.338"><i class="fa fa-facebook"></i></a>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4" style="font-size: 18px; font-family: 'Kaushan Script;'">
+                                    <div class="card" style="background-color: #161616;">
+                                        <img class="img-responsive" src="Images/marie.jpg" alt="John" width="304" height="236">
+
+                                        <h1>Marie  <br />Sartain</h1>
+                                        <p class="title">Lucinda</p>
+                                       
+                                        <a href="https://www.facebook.com/marie.sartain.3"><i class="fa fa-facebook"></i></a>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    <div class="col-xs-12" style="height:20px;"></div>
+
+
+
+                <div class="col-xs-12" style="height:50px;"></div>
+                <div class="col-xs-12" style="height:50px;"></div>
+                </div>
+                </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+        <footer id="contact" class="text-center" style="font-family: 'Kaushan Script;'">
+            <a class="up-arrow" href="#" title="TO TOP">
+                <span class="glyphicon glyphicon-chevron-up"></span>
+            </a><br><br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+
+                        <p>Contact us and we'll get back to you soon.</p>
+                        <p><span class="glyphicon glyphicon-map-marker"></span> Derby, Uk</p>
+                        <p><span class="glyphicon glyphicon-phone"></span> +44 07917770752</p>
+                        <p><span class="glyphicon glyphicon-envelope"></span> twistedtalesfilms@gmail.com </p>
+                        <a href="https://www.facebook.com/TwistedTalesFilms/" class="fa fa-facebook"></a>
+                        <a href="https://twitter.com/TwistedTaleFilm" class="fa fa-twitter"></a>
+                        <a href="https://www.youtube.com/channel/UCaeghc7Hb041bWz5voqk50Q" class="fa fa-youtube"></a>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </footer>
+
+        <script>
+            $(document).ready(function(){
+                // Initialize Tooltip
+                $('[data-toggle="tooltip"]').tooltip(); 
+            })
+        </script>
+
+
+
+
+
+
+
+    </body>
+</html>
